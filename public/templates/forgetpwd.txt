@@ -1,0 +1,11 @@
+<html>
+<body>
+	Hello,
+	<p style="margin-left:30px;" >New password has been generated for your account </p>
+	<p style="margin-left:30px;">Email : <strong>[emailid]</strong></p>
+	<p style="margin-left:30px;">Password: <strong>[password]</strong></p> 
+	Thanks & Regards,
+        <p>I2E Consulting</p>
+
+</body>
+</html>

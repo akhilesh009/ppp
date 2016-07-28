@@ -1,0 +1,44 @@
+<%- include ../HeaderFooter/header.ejs%>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post" action="/resource">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact no</label>
+            <input type="text" name="contact" id="contact" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="language">Language</label>
+            <input type="text" name="language" id="language" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="domain">Company Domain</label>
+            <input type="text" name="domain" id="domain" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <!--<a href="/admin" style="text-decoration: none !important;" >Register</a> -->
+        </div>
+    </form>
+</div>
+<%- include ../HeaderFooter/footer.ejs%>

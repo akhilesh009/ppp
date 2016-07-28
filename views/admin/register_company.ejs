@@ -1,0 +1,28 @@
+<%- include ../HeaderFooter/header.ejs%>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post" action="">
+        <div class="form-group">
+            <label for="cname">Company Name</label>
+            <input type="text" name="cname" id="cname" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" name="cnumber" id="cnumber" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <!--<a href="/admin" style="text-decoration: none !important;" >Register</a> -->
+        </div>
+    </form>
+</div>
+<%- include ../HeaderFooter/footer.ejs%>

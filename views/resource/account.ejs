@@ -1,0 +1,66 @@
+<%- include ../HeaderFooter/header.ejs%>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post" action="/account" >
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact no</label>
+            <input type="text" name="contact" id="contact" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="language">Language</label>
+            <input type="text" name="language" id="language" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select name="role" id="role" onchange="checkrole();" >
+                <option value="Team Member">Team Member</option>
+                <option value="PM">PM</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+        <div class="form-group costforuse" >
+            <label for="costforuse">Cost for use</label>
+            <input type="text" name="costforuse" id="costforuse" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="costforhour">Cost for hour</label>
+            <input type="text" name="costforhour" id="costforhour" class="form-control" value="" />
+        </div>
+        <!--
+        <div class="form-group">
+            <label for="domain">Company Domain</label>
+            <input type="text" name="domain" id="domain" class="form-control" value="" />
+        </div>
+        -->
+        <div class="form-group">
+            <label class="control-label">Upload Image</label>
+            <input id="userimage" name="userimage" type="file" class="file" value="" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Add Resource</button>
+            <!--<a href="/admin" style="text-decoration: none !important;" >Register</a> -->
+        </div>
+    </form>
+</div>
+<%- include ../HeaderFooter/footer.ejs%>

@@ -1,0 +1,11 @@
+{
+	"emailconfig" :
+		{
+			"clientid"    :"48004618639-h2a27trs1h35066p90nolivnocipe3r3.apps.googleusercontent.com",
+			"clientsecret":"nuA4sNnA9OblBUeXyfpWhLub",
+			"refreshtoken":"1/aqPK65xNL6waiRK0sd-Dwq7t4pnlh4ej8NeY3qFLNq0",
+			"accesstoken" :"ya29.Ci8nA9vs5ce2RfR35pGG_O-Ro2lOUtzszYAhr9cPFMn_LvPI_CKTEXoZeeRxDiZOmw",
+			"username"    : "akhilesh.shete@akshayit.com",
+			"mailfrom"    : "akhilesh.shete@akshayit.com"
+		}
+}

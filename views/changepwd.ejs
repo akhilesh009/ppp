@@ -1,0 +1,23 @@
+<%- include HeaderFooter/header.ejs%>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post" action="/changepwd" >
+        <div class="form-group">
+            <label for="currentpassword">Enter Current Password</label>
+            <input type="password" name="current_pwd" id="current_pwd" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="newpassword">Enter New Password</label>
+            <input type="password" name="new_pwd" id="new_pwd" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+<%- include HeaderFooter/footer.ejs%>

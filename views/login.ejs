@@ -1,0 +1,24 @@
+<%- include HeaderFooter/header.ejs%>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+    <form method="post" action="/login">
+        <div class="form-group">
+            <label for="username">Email</label>
+            <input type="text" name="email" id="email" value="" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <a href="/admin" style="text-decoration: none !important;" >Register</a> 
+        </div>
+    </form>
+</div>
+<%- include HeaderFooter/footer.ejs%>
